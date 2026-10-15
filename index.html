@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <header>Counter</header>
+
+    <div id="content">
+      <div id="content-id">
+        <p id="P_counterValue">Counter value:</p>
+        <h3 id="h3Content">0</h3>
+      </div>
+
+      <div>
+        <button id="BUTTON_decrease">
+          <div id="decrease">_</div>
+        </button>
+        <button id="BUTTON_increase">
+          <div id="increase">+</div>
+        </button>
+      </div>
+
+      <div>
+          <button id="BUTTON_decrease10">
+          <div id="decrease10">-10</div>
+        </button>
+
+        <button id="BUTTON_increase10">
+          <div id="increase10">+10</div>
+        </button>
+      </div>
+
+    </div>
+
+
+
+    <script>
+      let number = 0;
+      const buttonDec = document.getElementById("BUTTON_decrease");
+      const buttonInc = document.getElementById("BUTTON_increase");
+
+      const buttonDec10 = document.getElementById("BUTTON_decrease10");
+      const buttonInc10 = document.getElementById("BUTTON_increase10");
+
+      const h3Content = document.getElementById("h3Content");
+
+      h3Content.innerHTML = number;
+      buttonDec.addEventListener("click", () => {
+        number--;
+        h3Content.innerHTML = number;
+      })
+
+      buttonInc.addEventListener("click", () => {
+        number++;
+        h3Content.innerHTML = number;
+      })
+
+      buttonDec10.addEventListener("click", () => {
+        number -= 10;
+        h3Content.innerHTML = number;
+      })
+
+      buttonInc10.addEventListener("click", () => {
+        number += 10;
+        h3Content.innerHTML = number;
+      })
+
+    </script>
+  </body>
+</html>

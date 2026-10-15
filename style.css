@@ -1,0 +1,94 @@
+header {
+  background-color: #d3bcfd;
+  font-size: 20px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: lighter;
+  padding: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 25px;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-weight: lighter;
+  background-color: #f2ecf4;
+  user-select: none;
+}
+
+#content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+button {
+  position: relative;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  background-color: #ebddff;
+}
+
+#BUTTON_increase, #BUTTON_decrease {
+  font-size: 28px;
+  margin: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.253);
+}
+
+#BUTTON_increase10, #BUTTON_decrease10 {
+  color: #78659B;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#decrease {
+  background-color: #ebddff;
+  position: absolute;
+  top: -15%;
+  left: 38%;
+  height: 0px;
+}
+
+#increase {
+  background-color: #ebddff;
+  position: absolute;
+  top: 7%;
+  left: 30%;
+}
+
+#BUTTON_decrease10, #BUTTON_increase10 {
+  margin: 10px;
+  margin-top: 25px;
+}
+
+#decrease10, #increase10 {
+  color: #78659B;
+  background-color: #ebddff;
+}
+
+#BUTTON_decrease10 {
+  transform: translateX(-40%);
+}
+
+#BUTTON_increase10 {
+  transform: translateX(40%);
+}
+
+#P_counterValue {
+  text-align: center;
+}
